@@ -5,4 +5,4 @@ metadata:
   namespace: open-cluster-management
 spec:
   type: Git
-  pathname: https://github.com/RHsyseng/acm-app-lifecycle-blog.git
+  pathname: https://github.com/christianmarangoni/acm-app-lifecycle-blog.git
