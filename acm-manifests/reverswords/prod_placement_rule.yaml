@@ -1,0 +1,13 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  name: production-clusters
+  namespace: reverse-words
+spec:
+  clusterConditions:
+    - type: "ManagedClusterConditionAvailable"
+      status: "True"
+  clusterSelector:
+     matchExpressions: []
+     matchLabels:
+      ambiente: "prod"

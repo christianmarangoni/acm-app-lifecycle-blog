@@ -1,0 +1,18 @@
+apiVersion: app.k8s.io/v1beta1
+kind: Application
+metadata:
+  name: reversewords-app
+  namespace: reverse-words
+spec:
+  componentKinds:
+  - group: apps.open-cluster-management.io
+    kind: Subscription
+  descriptor: {}
+  selector:
+    matchExpressions:
+    - key: app
+      operator: In
+      values:
+      - reversewords-dev-app
+      - reversewords-pro-app
+
